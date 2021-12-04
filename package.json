@@ -1,0 +1,28 @@
+{
+  "name": "projeto-biblioteca",
+  "version": "1.0.0",
+  "description": "biblioteca privada",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiosdsilva/Projeto-Biblioteca.git"
+  },
+  "author": "Fabio Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabiosdsilva/Projeto-Biblioteca/issues"
+  },
+  "homepage": "https://github.com/fabiosdsilva/Projeto-Biblioteca#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.12.0-alpha.1",
+    "validator": "^13.7.0"
+  }
+}
