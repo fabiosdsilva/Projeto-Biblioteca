@@ -1,12 +1,14 @@
-
+<%- include ('partials/head.ejs') %>
 <body id="page-top">
     <div id="wrapper">
-        <!-- MENU -->
 
+        <!-- MENU -->
+        <%- include ('partials/menu.ejs') %>
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
-              <!-- NAV -->
 
+              <!-- NAV -->
+              <%- include ('partials/nav.ejs') %>
                 <div class="container-fluid">
                     <div class="row justify-content-md-center">
                         <div class="col-12">
@@ -15,7 +17,7 @@
                                 <div class="card-group d-table">
                                     <!-- AQUI QUE VOU COMEÇAR O FOREACH -->
                                     <div class="card lista me-3" style="width: 15rem;">
-                                        <a href="#"> <img src="assets/img/dogs/image2.jpeg" class="card-img-top" alt=""> </a>
+                                        <a href="#"> <img src="/img/dogs/image2.jpeg" class="card-img-top" alt=""> </a>
                                         <div class="card-body">
                                             <h1 class="card-title">Não desista agora</h1>
                                         </div>
@@ -25,7 +27,7 @@
                                       </div>
     
                                       <div class="card lista me-3" style="width: 15rem;">
-                                        <a href="#"> <img src="assets/img/dogs/image2.jpeg" class="card-img-top" alt=""> </a>
+                                        <a href="#"> <img src="/img/dogs/image2.jpeg" class="card-img-top" alt=""> </a>
                                         <div class="card-body">
                                             <h1 class="card-title">A culpa é das estrelas</h1>
                                         </div>
@@ -42,5 +44,6 @@
             </div>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
+    <%- include ('partials/footer.ejs') %>
 </body>
 <!-- FOOTER -->

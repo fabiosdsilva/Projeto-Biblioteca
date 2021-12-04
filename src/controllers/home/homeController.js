@@ -1,3 +1,5 @@
-exports.home = (req, res) =>{
-    res.send('home')
+const home = (req, res) =>{
+    res.render('home')
 }
+
+module.exports = home

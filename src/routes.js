@@ -3,7 +3,7 @@ const router = express.Router()
 
 //HOME
 const home = require('./controllers/home/homeController')
-router.get('/', home.home)
+router.get('/', home)
 
 //signup
 
