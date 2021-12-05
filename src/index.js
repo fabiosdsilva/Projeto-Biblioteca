@@ -5,6 +5,10 @@ const path = require('path')
 const port = 8083
 const routes = require('./routes')
 
+//DATABASE
+const db = require('./db/db')
+db.authenticate().then(() =>{ console.log('Connected to the database')}).catch(err =>{ console.log(`Falied to connect to database. Error: ${err}`) })
+
 //VIEW ENGINE
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
