@@ -15,5 +15,6 @@ router.get('/reading/:slug', reading.reading)
 //LOGIN
 const login = require('./controllers/login/loginController')
 router.get('/login', login.login)
+router.post('/login', login.loginAcess)
 
 module.exports = router
