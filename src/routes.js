@@ -9,6 +9,11 @@ router.get('/', home.home)
 const reading  = require('./controllers/home/homeController')
 router.get('/reading/:slug', reading.reading)
 
-//signup
+//SIGNUP
+
+
+//LOGIN
+const login = require('./controllers/login/loginController')
+router.get('/login', login.login)
 
 module.exports = router
