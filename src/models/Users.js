@@ -18,10 +18,15 @@
             type: Sequelize.STRING,
             allowNull: true
         },
-        age: {
-            type: Sequelize.INTEGER,
+        today: {
+            type: Sequelize.DATE,
+            allowNull: true
+        },
+        birthDate: {
+            type: Sequelize.DATE,
             allowNull: true
         }
+
     })
 
 
