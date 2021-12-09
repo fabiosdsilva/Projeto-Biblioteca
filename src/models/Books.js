@@ -5,11 +5,11 @@
     const Book = await connection.define('books', {
         title: {
             type: Sequelize.STRING,
-            allowNull: true
+            allowNull: false
         },
         author: {
             type: Sequelize.STRING,
-            allowNull: true
+            allowNull: false
         },
         amount_pages: {
             type: Sequelize.INTEGER
