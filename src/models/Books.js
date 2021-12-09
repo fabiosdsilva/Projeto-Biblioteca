@@ -2,7 +2,7 @@
     const Sequelize = require('sequelize')
     const connection = require('../db/db')
 
-    const Book = connection.define('books', {
+    const Book = await connection.define('books', {
         title: {
             type: Sequelize.STRING,
             allowNull: true
