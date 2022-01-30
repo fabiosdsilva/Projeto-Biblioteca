@@ -6,8 +6,8 @@ const home = require('./controllers/home/homeController');
 router.get('/', home.index);
 
 //READING
-const reading  = require('./controllers/home/homeController');
-router.get('/reading/:slug', reading.show);
+const book  = require('./controllers/read/readController');
+router.get('/book/:id', book.show);
 
 //SIGNUP
 
